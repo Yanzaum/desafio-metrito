@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import Routes from "./routes/api";
 import cors from "cors";
 
-dotenv.config();
+require("dotenv").config();
 
 const PORT = process.env["PORT"];
 

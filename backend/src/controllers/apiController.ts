@@ -1,13 +1,12 @@
 import axios from "axios";
 import { Request, Response } from "express";
-import dotenv from "dotenv";
 import { SaleType } from "../types/Sales";
 
-dotenv.config();
+require("dotenv").config();
 
-const CLIENT_ID = process.env["CLIENT_ID"];
-const CLIENT_SECRET = process.env["CLIENT_SECRET"];
-const TOKEN = process.env["TOKEN"];
+const CLIENT_ID = process.env.CLIENT_ID;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
+const TOKEN = process.env.TOKEN;
 
 export const authentication = async (req: Request, res: Response) => {
   axios
